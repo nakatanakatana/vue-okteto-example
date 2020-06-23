@@ -1,0 +1,11 @@
+name: vue-okteto-example-serve
+image: okteto/node:12
+build:
+  target: dev
+command:
+  - npm
+  - run
+  - serve
+workdir: /usr/src/app
+forward:
+  - 9229:9229

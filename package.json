@@ -5,9 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "coverage": "npm run test:unit -- --coverage",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lint:exec": "npm run lint",
+    "okteto:serve": "okteto up --file okteto.serve.yml --build",
+    "okteto:test": "okteto up --file okteto.test.yml --build",
+    "okteto": "okteto up"
   },
   "dependencies": {
     "core-js": "^3.6.5",

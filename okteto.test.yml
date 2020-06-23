@@ -1,0 +1,11 @@
+name: vue-okteto-example-test
+image: okteto/node:12
+build:
+  target: dev
+command:
+  - npm
+  - run
+  - test:unit
+  - --
+  - --watchAll
+workdir: /usr/src/app
